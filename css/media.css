@@ -521,6 +521,12 @@
 .billbord {
 	margin-top: 15px;
 }
+.unit-product {
+    line-height: 21px;
+    }
+    .offer-block__image img {
+    	object-position: left;
+    }
 }
 
 /* Custom, iPhone Retina */
