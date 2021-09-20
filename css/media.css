@@ -367,6 +367,8 @@
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
+		width: 25px;
+		height: 25px;
 	}
 }
 
@@ -514,6 +516,7 @@
 }
 .about-block {
 	padding: 20px;
+	padding-top: 0;
 }
 .about__image {
     height: 235px;
