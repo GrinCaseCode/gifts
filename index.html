@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.2" />
-	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+	<link rel="stylesheet" href="css/main.css?ver=1.4" />
+	<link rel="stylesheet" href="css/media.css?ver=1.4" />
 </head>
 <body>
 
@@ -27,13 +27,12 @@
 
 		<div class="buttons-mobile">
 			<a href="#" class="btn-mobile"><i class="far fa-home"></i></a>
-			<a href="#" class="btn-mobile btn-mobile_catalog"><i class="fas fa-bars"></i></a>
 			<a href="#" class="btn-mobile"><i class="far fa-shopping-bag"></i><span class="btn-mobile__value">10</span></a>
 			<a href="#" class="btn-mobile"><i class="far fa-user"></i></a>
 		</div>
 
 		<header class="header default">
-			<div class="container">
+			<div class="container header__top">
 				<div class="row align-items-center">
 					<div class="col-lg-4">
 						<div class="header__left">
@@ -44,15 +43,21 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col_center">
-						<a href="tel:+79780340395" class="phone-mob"><i class="fas fa-phone"></i></a>
-						<a href="#" class="logo">
-							<img src="img/logo.png" alt="alt">
-						</a>
-						<span class="btn_nav">
+						<span class="btn_nav btn_nav-nav">
 							<span class='sandwich'>
 								<span class='sw-topper'></span>
 								<span class='sw-bottom'></span>
 								<span class='sw-footer'></span>
+							</span>
+						</span>
+						<a href="#" class="logo">
+							<img src="img/logo.png" alt="alt">
+						</a>
+						<span class="btn_nav btn_nav-menu">
+							<span class='sandwich'>
+								<span></span>
+								<span></span>
+								<span></span>
 							</span>
 						</span>
 					</div>
@@ -67,6 +72,9 @@
 			</div>
 			<div class="container">
 				<div class="header__wrap">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="alt">
+					</a>
 					<a href="#" class="btn-catalog"><i class="fas fa-bars"></i>Каталог</a>
 					<div class="form-search">
 						<form>
@@ -97,9 +105,6 @@
 				<a href="tel:+79781234567" class="phone-main">+7 (978) 123-45-67</a>
 			</div>
 			<div class="catalog-menu">
-				<div class="catalog-menu__close">
-					<i class="fal fa-times"></i> 
-				</div>
 				<div class="container">
 					<ul class="catalog-menu__list">
 						<li>
@@ -442,7 +447,7 @@
 			</div>
 		</header>
 
-		<div class="billbord">
+		<section class="billbord">
 			<div class="container">
 				<ul class="slider-billbord">
 					<li>
@@ -483,55 +488,56 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</section>
 
-		<div class="container">
-			<div class="title-logo">
-				<div class="title-logo__line"></div>
-				<img src="img/logo_title.png" alt="alt">
-				<div class="title-logo__line"></div>
-			</div>
-		</div>
-
-		<div class="categories">
+		<section>
 			<div class="container">
-				<div class="row row_categories">
-					<div class="col-lg-6">
-						<div class="item-category item-category_1">
-							<a href="#" class="item-category__link"></a>
-							<div class="item-category__title">Ювелирные украшения</div>
-							<img src="img/category1.jpg" alt="alt">
-							<div class="item-category__content">
-								<ul>
-									<li><a href="#">Кольца</a></li>
-									<li><a href="#">Серьги</a></li>
-									<li><a href="#">Подвески</a></li>
-									<li><a href="#">Браслеты</a></li>
-									<li><a href="#">Колье</a></li>
-									<li><a href="#">Броши</a></li>
-									<li><a href="#">Цепи</a></li>
-									<li><a href="#">Другое</a></li>
-								</ul>
+				<div class="title-logo">
+					<div class="title-logo__line"></div>
+					<img src="img/logo_title.png" alt="alt">
+					<div class="title-logo__line"></div>
+				</div>
+			</div>
+			<div class="categories">
+				<div class="container">
+					<div class="row row_categories">
+						<div class="col-lg-6">
+							<div class="item-category item-category_1">
+								<a href="#" class="item-category__link"></a>
+								<div class="item-category__title">Ювелирные украшения</div>
+								<img src="img/category1.jpg" alt="alt">
+								<div class="item-category__content">
+									<ul>
+										<li><a href="#">Кольца</a></li>
+										<li><a href="#">Серьги</a></li>
+										<li><a href="#">Подвески</a></li>
+										<li><a href="#">Браслеты</a></li>
+										<li><a href="#">Колье</a></li>
+										<li><a href="#">Броши</a></li>
+										<li><a href="#">Цепи</a></li>
+										<li><a href="#">Другое</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-6 col_categories">
-						<div class="item-category item-category_2">
-							<a href="#" class="item-category__link"></a>
-							<div class="item-category__title">Подарки и сувениры</div>
-							<img src="img/category2.jpg" alt="alt">
-						</div>
-						<div class="item-category item-category_3">
-							<a href="#" class="item-category__link"></a>
-							<div class="item-category__title">Часы</div>
-							<img src="img/category3.jpg" alt="alt">
+						<div class="col-lg-6 col_categories">
+							<div class="item-category item-category_2">
+								<a href="#" class="item-category__link"></a>
+								<div class="item-category__title">Подарки и сувениры</div>
+								<img src="img/category2.jpg" alt="alt">
+							</div>
+							<div class="item-category item-category_3">
+								<a href="#" class="item-category__link"></a>
+								<div class="item-category__title">Часы</div>
+								<img src="img/category3.jpg" alt="alt">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="products">
+		<section class="products">
 			<div class="container">
 				<div class="title-section">Наши новинки</div>
 				<div class="title-logo">
@@ -565,6 +571,18 @@
 										<span>Фианит</span>
 										<span>6 шт</span>
 									</div>
+									<div class="line-feature">
+										<span>Размер</span>
+										<div class="list-sizes">
+											<div class="item-size active">16.5</div>
+											<div class="item-size">17</div>
+											<div class="item-size">17.5</div>
+											<div class="item-size">18</div>
+											<div class="item-size">18.5</div>
+											<div class="item-size">19</div>
+											<div class="item-size">19.5</div>
+										</div>
+									</div>
 								</div>
 								<div class="item-porduct__bottom">
 									<a href="#" class="btn-main">В корзину</a>
@@ -596,6 +614,18 @@
 									<div class="line-feature">
 										<span>Фианит</span>
 										<span>6 шт</span>
+									</div>
+									<div class="line-feature">
+										<span>Размер</span>
+										<div class="list-sizes">
+											<div class="item-size active">16.5</div>
+											<div class="item-size">17</div>
+											<div class="item-size">17.5</div>
+											<div class="item-size">18</div>
+											<div class="item-size">18.5</div>
+											<div class="item-size">19</div>
+											<div class="item-size">19.5</div>
+										</div>
 									</div>
 								</div>
 								<div class="item-porduct__bottom">
@@ -629,6 +659,18 @@
 										<span>Фианит</span>
 										<span>6 шт</span>
 									</div>
+									<div class="line-feature">
+										<span>Размер</span>
+										<div class="list-sizes">
+											<div class="item-size active">16.5</div>
+											<div class="item-size">17</div>
+											<div class="item-size">17.5</div>
+											<div class="item-size">18</div>
+											<div class="item-size">18.5</div>
+											<div class="item-size">19</div>
+											<div class="item-size">19.5</div>
+										</div>
+									</div>
 								</div>
 								<div class="item-porduct__bottom">
 									<a href="#" class="btn-main">В корзину</a>
@@ -660,6 +702,18 @@
 									<div class="line-feature">
 										<span>Фианит</span>
 										<span>6 шт</span>
+									</div>
+									<div class="line-feature">
+										<span>Размер</span>
+										<div class="list-sizes">
+											<div class="item-size active">16.5</div>
+											<div class="item-size">17</div>
+											<div class="item-size">17.5</div>
+											<div class="item-size">18</div>
+											<div class="item-size">18.5</div>
+											<div class="item-size">19</div>
+											<div class="item-size">19.5</div>
+										</div>
 									</div>
 								</div>
 								<div class="item-porduct__bottom">
@@ -693,6 +747,18 @@
 										<span>Фианит</span>
 										<span>6 шт</span>
 									</div>
+									<div class="line-feature">
+										<span>Размер</span>
+										<div class="list-sizes">
+											<div class="item-size active">16.5</div>
+											<div class="item-size">17</div>
+											<div class="item-size">17.5</div>
+											<div class="item-size">18</div>
+											<div class="item-size">18.5</div>
+											<div class="item-size">19</div>
+											<div class="item-size">19.5</div>
+										</div>
+									</div>
 								</div>
 								<div class="item-porduct__bottom">
 									<a href="#" class="btn-main">В корзину</a>
@@ -702,9 +768,9 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</section>
 
-		<div class="offers">
+		<section class="offers">
 			<div class="container">
 				<div class="title-section">Предложения</div>
 				<div class="title-logo">
@@ -782,50 +848,190 @@
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="row">
-							<div class="col-6">
-								<a href="#" class="unit-product">
-									<span class="unit-product__image">
-										<img src="img/prod1.jpg" alt="alt">
-									</span>
-									<span class="unit-product__title">Кольцо из белого золота с бриллиантом</span>
-									<span class="unit-product__price">42 990 ₽</span>
-								</a>
+						<div class="row row_items">
+							<div class="col-sm-6">
+								<div class="wrap-item">
+									<div class="item-porduct">
+										<a href="#" class="item-porduct__image">
+											<img src="img/prod1.jpg" alt="alt">
+										</a>
+										<a href="#" class="item-porduct__title">Кольцо из золота с топазом и фианитами</a>
+										<div class="item-porduct__price">7 670 ₽</div>
+										<div class="item-porduct__content">
+											<div class="line-feature">
+												<span>Красное золото</span>
+												<span>585</span>
+											</div>
+											<div class="line-feature">
+												<span>Примерный вес</span>
+												<span>1.34 г</span>
+											</div>
+											<div class="line-feature">
+												<span>Топаз</span>
+												<span>1 шт</span>
+											</div>
+											<div class="line-feature">
+												<span>Фианит</span>
+												<span>6 шт</span>
+											</div>
+											<div class="line-feature">
+												<span>Размер</span>
+												<div class="list-sizes">
+													<div class="item-size active">16.5</div>
+													<div class="item-size">17</div>
+													<div class="item-size">17.5</div>
+													<div class="item-size">18</div>
+													<div class="item-size">18.5</div>
+													<div class="item-size">19</div>
+													<div class="item-size">19.5</div>
+												</div>
+											</div>
+											<div class="item-porduct__bottom">
+												<a href="#" class="btn-main">В корзину</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="col-6">
-								<a href="#" class="unit-product">
-									<span class="unit-product__image">
-										<img src="img/prod2.jpg" alt="alt">
-									</span>
-									<span class="unit-product__title">Кольцо из розового золота с бриллиантом</span>
-									<span class="unit-product__price">42 990 ₽</span>
-								</a>
+							<div class="col-sm-6">
+								<div class="wrap-item">
+									<div class="item-porduct">
+										<a href="#" class="item-porduct__image">
+											<img src="img/prod2.jpg" alt="alt">
+										</a>
+										<a href="#" class="item-porduct__title">Кольцо из розового золота с бриллиантом</a>
+										<div class="item-porduct__price">42 990 ₽</div>
+										<div class="item-porduct__content">
+											<div class="line-feature">
+												<span>Красное золото</span>
+												<span>585</span>
+											</div>
+											<div class="line-feature">
+												<span>Примерный вес</span>
+												<span>1.34 г</span>
+											</div>
+											<div class="line-feature">
+												<span>Топаз</span>
+												<span>1 шт</span>
+											</div>
+											<div class="line-feature">
+												<span>Фианит</span>
+												<span>6 шт</span>
+											</div>
+											<div class="line-feature">
+												<span>Размер</span>
+												<div class="list-sizes">
+													<div class="item-size active">16.5</div>
+													<div class="item-size">17</div>
+													<div class="item-size">17.5</div>
+													<div class="item-size">18</div>
+													<div class="item-size">18.5</div>
+													<div class="item-size">19</div>
+													<div class="item-size">19.5</div>
+												</div>
+											</div>
+											<div class="item-porduct__bottom">
+												<a href="#" class="btn-main">В корзину</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="col-6">
-								<a href="#" class="unit-product">
-									<span class="unit-product__image">
-										<img src="img/prod2.jpg" alt="alt">
-									</span>
-									<span class="unit-product__title">Кольцо из розового золота с бриллиантом</span>
-									<span class="unit-product__price">42 990 ₽</span>
-								</a>
+							<div class="col-sm-6">
+								<div class="wrap-item">
+									<div class="item-porduct">
+										<a href="#" class="item-porduct__image">
+											<img src="img/prod2.jpg" alt="alt">
+										</a>
+										<a href="#" class="item-porduct__title">Кольцо из розового золота с бриллиантом</a>
+										<div class="item-porduct__price">42 990 ₽</div>
+										<div class="item-porduct__content">
+											<div class="line-feature">
+												<span>Красное золото</span>
+												<span>585</span>
+											</div>
+											<div class="line-feature">
+												<span>Примерный вес</span>
+												<span>1.34 г</span>
+											</div>
+											<div class="line-feature">
+												<span>Топаз</span>
+												<span>1 шт</span>
+											</div>
+											<div class="line-feature">
+												<span>Фианит</span>
+												<span>6 шт</span>
+											</div>
+											<div class="line-feature">
+												<span>Размер</span>
+												<div class="list-sizes">
+													<div class="item-size active">16.5</div>
+													<div class="item-size">17</div>
+													<div class="item-size">17.5</div>
+													<div class="item-size">18</div>
+													<div class="item-size">18.5</div>
+													<div class="item-size">19</div>
+													<div class="item-size">19.5</div>
+												</div>
+											</div>
+											<div class="item-porduct__bottom">
+												<a href="#" class="btn-main">В корзину</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="col-6">
-								<a href="#" class="unit-product">
-									<span class="unit-product__image">
-										<img src="img/prod1.jpg" alt="alt">
-									</span>
-									<span class="unit-product__title">Кольцо из белого золота с бриллиантом</span>
-									<span class="unit-product__price">42 990 ₽</span>
-								</a>
+							<div class="col-sm-6">
+								<div class="wrap-item">
+									<div class="item-porduct">
+										<a href="#" class="item-porduct__image">
+											<img src="img/prod1.jpg" alt="alt">
+										</a>
+										<a href="#" class="item-porduct__title">Кольцо из золота с топазом и фианитами</a>
+										<div class="item-porduct__price">7 670 ₽</div>
+										<div class="item-porduct__content">
+											<div class="line-feature">
+												<span>Красное золото</span>
+												<span>585</span>
+											</div>
+											<div class="line-feature">
+												<span>Примерный вес</span>
+												<span>1.34 г</span>
+											</div>
+											<div class="line-feature">
+												<span>Топаз</span>
+												<span>1 шт</span>
+											</div>
+											<div class="line-feature">
+												<span>Фианит</span>
+												<span>6 шт</span>
+											</div>
+											<div class="line-feature">
+												<span>Размер</span>
+												<div class="list-sizes">
+													<div class="item-size active">16.5</div>
+													<div class="item-size">17</div>
+													<div class="item-size">17.5</div>
+													<div class="item-size">18</div>
+													<div class="item-size">18.5</div>
+													<div class="item-size">19</div>
+													<div class="item-size">19.5</div>
+												</div>
+											</div>
+											<div class="item-porduct__bottom">
+												<a href="#" class="btn-main">В корзину</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="collections">
+		<section class="collections">
 			<div class="container">
 				<div class="title-section">Коллекции</div>
 				<div class="title-logo">
@@ -837,96 +1043,98 @@
 					<div class="col-lg-6">
 						<div class="row">
 							<div class="col-md-6 col-sm-6">
-								<div class="item-collection item-collection_1">
-									<div class="item-collection__title">Engagement Rings</div>
-									<div class="item-collection__image">
+								<a href="#" class="item-collection item-collection_1">
+									<span class="item-collection__title">Engagement Rings</span>
+									<span class="item-collection__image">
 										<img src="img/collection1.jpg" alt="alt">
-									</div>
-									<div class="item-collection__button">
-										<a href="#" class="btn-main">Смотреть коллекцию</a>
-									</div>
-								</div>
+									</span>
+									<span class="item-collection__button">
+										<span class="btn-main">Смотреть коллекцию</span>
+									</span>
+								</a>
 							</div>
 							<div class="col-md-6 col-sm-6">
-								<div class="item-collection item-collection_2">
-									<div class="item-collection__title">все дело в тебе</div>
-									<div class="item-collection__image">
+								<a href="#" class="item-collection item-collection_2">
+									<span class="item-collection__title">все дело в тебе</span>
+									<span class="item-collection__image">
 										<img src="img/collection2.jpg" alt="alt">
-									</div>
-									<div class="item-collection__button">
-										<a href="#" class="btn-main">Смотреть коллекцию</a>
-									</div>
-								</div>
+									</span>
+									<span class="item-collection__button">
+										<span class="btn-main">Смотреть коллекцию</span>
+									</span>
+								</a>
 							</div>
 							<div class="col-md-6 col-sm-6">
-								<div class="item-collection item-collection_3">
-									<div class="item-collection__title">бриллианты якутии</div>
-									<div class="item-collection__image">
+								<a href="#" class="item-collection item-collection_3">
+									<span class="item-collection__title">бриллианты якутии</span>
+									<span class="item-collection__image">
 										<img src="img/collection3.jpg" alt="alt">
-									</div>
-									<div class="item-collection__button">
-										<a href="#" class="btn-main">Смотреть коллекцию</a>
-									</div>
-								</div>
+									</span>
+									<span class="item-collection__button">
+										<span class="btn-main">Смотреть коллекцию</span>
+									</span>
+								</a>
 							</div>
 							<div class="col-md-6 col-sm-6">
-								<div class="item-collection item-collection_4">
-									<div class="item-collection__title">славянские обереги</div>
-									<div class="item-collection__image">
+								<a href="#" class="item-collection item-collection_4">
+									<span class="item-collection__title">славянские обереги</span>
+									<span class="item-collection__image">
 										<img src="img/collection4.jpg" alt="alt">
-									</div>
-									<div class="item-collection__button">
-										<a href="#" class="btn-main">Смотреть коллекцию</a>
-									</div>
-								</div>
+									</span>
+									<span class="item-collection__button">
+										<span class="btn-main">Смотреть коллекцию</span>
+									</span>
+								</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="item-collection item-collection_5">
-							<div class="item-collection__title">Pandora Moments</div>
-							<div class="item-collection__image">
+						<a href="#" class="item-collection item-collection_5">
+							<span class="item-collection__title">Pandora Moments</span>
+							<span class="item-collection__image">
 								<img src="img/collection5.jpg" alt="alt">
-							</div>
-							<a href="#" class="btn-main">Смотреть коллекцию</a>
-						</div>
+							</span>
+							<span class="btn-main">Смотреть коллекцию</span>
+						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="container">
-			<div class="title-section">О магазине</div>
-			<div class="title-logo">
-				<div class="title-logo__line"></div>
-				<img src="img/logo_title2.png" alt="alt">
-				<div class="title-logo__line"></div>
-			</div>
-		</div>
-
-		<div class="about">
+		<section>
 			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-3 col-6">
-						<div class="about__image">
-							<img src="img/about1.jpg" alt="alt">
+				<div class="title-section">О магазине</div>
+				<div class="title-logo">
+					<div class="title-logo__line"></div>
+					<img src="img/logo_title2.png" alt="alt">
+					<div class="title-logo__line"></div>
+				</div>
+			</div>
+			<div class="about">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 col-6">
+							<div class="about__image">
+								<img src="img/about1.jpg" alt="alt">
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="about-block">
-							<p>Онлайн-маркет ювелирных украшений «с историей».</p>
-							<p>Золото ценится людьми с давних времен, однако и сейчас большая редкость и красота этого металла, вызывает искренний восторг у каждого человека, которому преподносят в подарок золотое украшение.</p>
-							<p>Представьте, семьдесят процентов обнаруженного золота в мире приходится на последние сто лет и оно по сей день в обороте! Кто знает, может быть, обручальное кольцо вашей бабушки - работа ювелира из золота времен «золотой лихорадки», а недавний подарок от любимого человека был создан из металла, который носили в высших кругах начала 20-го века?</p>
+						<div class="col-lg-6">
+							<div class="about-block">
+								<p>Онлайн-маркет ювелирных украшений «с историей».</p>
+								<p>Золото ценится людьми с давних времен, однако и сейчас большая редкость и красота этого металла, вызывает искренний восторг у каждого человека, которому преподносят в подарок золотое украшение.</p>
+								<p>Представьте, семьдесят процентов обнаруженного золота в мире приходится на последние сто лет и оно по сей день в обороте! Кто знает, может быть, обручальное кольцо вашей бабушки - работа ювелира из золота времен «золотой лихорадки», а недавний подарок от любимого человека был создан из металла, который носили в высших кругах начала 20-го века?</p>
+								<a href="#" class="btn-main">Подробнее</a>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-6">
-						<div class="about__image">
-							<img src="img/about2.jpg" alt="alt">
+						<div class="col-lg-3 col-6">
+							<div class="about__image">
+								<img src="img/about2.jpg" alt="alt">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<footer class="footer">
 			<div class="container">
@@ -992,7 +1200,7 @@
 				</div>
 			</div>
 		</footer>
-		
+
 	</div>
 
 	<!--[if lt IE 9]>
@@ -1008,7 +1216,7 @@
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.2"></script>
+<script src="js/common.js?ver=1.4"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
