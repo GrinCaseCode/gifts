@@ -14,7 +14,7 @@
 		max-width: 300px;
 	}
 	.item-billbord__content {
-		padding: 47px 38px;
+		padding: 47px 50px;
 	}
 	.item-billbord__descr {
 		font-size: 41px;
@@ -31,6 +31,12 @@
 }
 .row_catalog > div {
 	padding: 0 15px;
+}
+.slider-billbord .slick-prev {
+	left: 7px;
+}
+.slider-billbord .slick-next {
+	right: 7px;
 }
 }
 /* Large Devices, Wide Screens */
@@ -285,6 +291,7 @@
 	.phone-mob {
 		font-size: 20px;
 		margin-right: 10px;
+		    margin-left: -50px;
 		display: inline-block;
 		color: #e3bf8a;
 	}
@@ -389,6 +396,10 @@
 .item-category__content li {
     margin-bottom: 15px;
     margin-right: 10px;
+}
+.header.fixed {
+    padding-top: 14px;
+    transform: none;
 }
 }
 
@@ -503,6 +514,9 @@
 .item-category__content {
     top: 114px;
     left: 31px;
+}
+.row_items > div {
+	margin-bottom: 0;
 }
 }
 

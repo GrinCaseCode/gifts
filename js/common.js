@@ -23,8 +23,9 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 
 		//кнопка sandwich
-	$(".btn_nav").click(function() {
+	$(".btn_nav-nav").click(function() {
 		$(".sandwich").toggleClass("active"); 
+		$(".catalog-menu").slideUp(200);
 		if ($(".menu-mobile").is(":hidden")) {
 			$(".menu-mobile").slideDown(200);
 		} else {
@@ -38,9 +39,11 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			$(".sandwich").removeClass("active");
 		});
 
-	$(".btn-catalog, .btn-mobile_catalog").click(function(e) {
+	$(".btn-catalog, .btn_nav-menu").click(function(e) {
 		e.preventDefault();
-			$(".catalog-menu").fadeToggle(200); 
+			$(".menu-mobile").slideUp(200);
+			$(".sandwich").removeClass("active");
+			$(".catalog-menu").slideToggle(200); 
 			$(this).toggleClass("active");
 		});
 
@@ -53,6 +56,13 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			$(".catalog-menu__close").click(function(e) {
 		e.preventDefault();
 			$(".catalog-menu").fadeOut(200);
+		});
+
+
+	$(".item-size").click(function(e) {
+		e.preventDefault();
+		$(this).siblings().removeClass("active");
+		$(this).addClass("active");
 		});
 
 {
@@ -68,18 +78,30 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//слайдер
 
 	$('.slider-billbord').slick({
-		arrows: false,
+		arrows: true,
 		dots: true,
 		infinite: true,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+			arrows: false,
+			}
+		}
+		]
 	});
 
 	$('.slider-products').slick({
-		arrows: false,
+		arrows: true,
 		dots: false,
 		infinite: true,
 		slidesToShow: 5,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
 		slidesToScroll: 1,
 		responsive: [
 		{
