@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap-5.0.2/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.5" />
+	<link rel="stylesheet" href="css/main.css?ver=1.5" />
+	<link rel="stylesheet" href="css/media.css?ver=1.5" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="buttons-mobile">
+			<a href="#" class="btn-mobile"><i class="far fa-home"></i></a>
+			<a href="#" class="btn-mobile"><i class="far fa-shopping-bag"></i><span class="btn-mobile__value">10</span></a>
+			<a href="#" class="btn-mobile"><i class="far fa-user"></i></a>
+		</div>
+
+		<header class="header default">
+			<div class="container header__top">
+				<div class="row align-items-center">
+					<div class="col-lg-4">
+						<div class="header__left">
+							<div class="dropdown-city">
+								<div class="dropdown-city__value">Симферополь <i class="fas fa-chevron-down"></i></div>
+							</div>
+							<a href="tel:+79781234567" class="phone-main">+7 (978) 123-45-67</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col_center">
+						<span class="btn_nav btn_nav-nav">
+							<span class='sandwich'>
+								<span class='sw-topper'></span>
+								<span class='sw-bottom'></span>
+								<span class='sw-footer'></span>
+							</span>
+						</span>
+						<a href="#" class="logo">
+							<img src="img/logo.png" alt="alt">
+						</a>
+						<span class="btn_nav btn_nav-menu">
+							<span class='sandwich'> 
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</div>
+					<div class="col-lg-4">
+						<ul class="menu">
+							<li><a href="#">Коллекции</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="header__wrap">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="alt">
+					</a>
+					<a href="#" class="btn-catalog"><i class="fas fa-bars"></i>Каталог</a>
+					<div class="form-search">
+						<form>
+							<input type="text" placeholder="Что вы ищете?" required="required">
+							<button class="btn-search"><i class="far fa-search"></i></button>
+						</form>
+					</div>
+					<a href="#" class="btn-page">Заказы</a>
+					<a href="#" class="link-header">Корзина <i class="far fa-shopping-bag"></i><span class="link-header__value">2</span></a>
+					<a href="#" class="link-header"><i class="far fa-user"></i> Вход </a>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<div class="form-search">
+					<form>
+						<input type="text" placeholder="Что вы ищете?" required="required">
+						<button class="btn-search"><i class="far fa-search"></i></button>
+					</form>
+				</div>
+				<ul class="menu">
+					<li><a href="#">Коллекции</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="dropdown-city">
+					<div class="dropdown-city__value">Симферополь <i class="fas fa-chevron-down"></i></div>
+				</div>
+				<a href="tel:+79781234567" class="phone-main">+7 (978) 123-45-67</a>
+			</div>
+			<div class="catalog-menu">
+				<div class="container">
+					<ul class="catalog-menu__list">
+						<li>
+							<a href="#"><span class="catalog-menu__icon"><img src="img/ic_cat1.png" alt="alt"></span>Кольца</a>
+							<div class="catalog-menu__content">
+								<div class="row">
+									<div class="col-lg-4">
+										<ul class="catalog-menu__sublist">
+											<li><a href="#">Кольца</a></li>
+											<li><a href="#">Кольца</a></li>
+											<li><a href="#">Кольца</a></li>
+											<li><a href="#">Кольца</a></li>
+											<li><a href="#">Кольца</a></li>
+											<li><a href="#">Кольца</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4">
+										<div class="catalog-menu__subimage">
+											<img src="img/sub_menu1.jpg" alt="alt">
+										</div>
+									</div>
+								</div>
+								<div class="row row_catalog">
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Полудрагоценные камни</span>
+											<img src="img/cat1.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Драгоценные камни</span>
+											<img src="img/cat2.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Все серьги</span>
+											<img src="img/cat3.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="catalog-menu__icon"><img src="img/ic_cat2.png" alt="alt"></span>Серьги</a>
+							<div class="catalog-menu__content">
+								<div class="row">
+									<div class="col-lg-4">
+										<ul class="catalog-menu__sublist">
+											<li><a href="#">Пусеты</a></li>
+											<li><a href="#">Длинные</a></li>
+											<li><a href="#">Серьги-цепочки</a></li>
+											<li><a href="#">Конго</a></li>
+											<li><a href="#">Одиночные серьги</a></li>
+											<li><a href="#">Зажимы</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4">
+										<div class="catalog-menu__subimage">
+											<img src="img/sub_menu1.jpg" alt="alt">
+										</div>
+									</div>
+								</div>
+								<div class="row row_catalog">
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Полудрагоценные камни</span>
+											<img src="img/cat1.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Драгоценные камни</span>
+											<img src="img/cat2.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Все серьги</span>
+											<img src="img/cat3.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="catalog-menu__icon"><img src="img/ic_cat3.png" alt="alt"></span>Подвески</a>
+							<div class="catalog-menu__content">
+								<div class="row">
+									<div class="col-lg-4">
+										<ul class="catalog-menu__sublist">
+											<li><a href="#">Подвески</a></li>
+											<li><a href="#">Подвески</a></li>
+											<li><a href="#">Подвески</a></li>
+											<li><a href="#">Подвески</a></li>
+											<li><a href="#">Подвески</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4">
+										<div class="catalog-menu__subimage">
+											<img src="img/sub_menu1.jpg" alt="alt">
+										</div>
+									</div>
+								</div>
+								<div class="row row_catalog">
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Полудрагоценные камни</span>
+											<img src="img/cat1.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Драгоценные камни</span>
+											<img src="img/cat2.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Все серьги</span>
+											<img src="img/cat3.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="catalog-menu__icon"><img src="img/ic_cat4.png" alt="alt"></span>Браслеты</a>
+							<div class="catalog-menu__content">
+								<div class="row">
+									<div class="col-lg-4">
+										<ul class="catalog-menu__sublist">
+											<li><a href="#">Браслеты</a></li>
+											<li><a href="#">Браслеты</a></li>
+											<li><a href="#">Браслеты</a></li>
+											<li><a href="#">Браслеты</a></li>
+											<li><a href="#">Браслеты</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4">
+										<div class="catalog-menu__subimage">
+											<img src="img/sub_menu1.jpg" alt="alt">
+										</div>
+									</div>
+								</div>
+								<div class="row row_catalog">
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Полудрагоценные камни</span>
+											<img src="img/cat1.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Драгоценные камни</span>
+											<img src="img/cat2.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Все серьги</span>
+											<img src="img/cat3.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="catalog-menu__icon"><img src="img/ic_cat5.png" alt="alt"></span>Колье</a>
+							<div class="catalog-menu__content">
+								<div class="row">
+									<div class="col-lg-4">
+										<ul class="catalog-menu__sublist">
+											<li><a href="#">Колье</a></li>
+											<li><a href="#">Колье</a></li>
+											<li><a href="#">Колье</a></li>
+											<li><a href="#">Колье</a></li>
+											<li><a href="#">Колье</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4">
+										<div class="catalog-menu__subimage">
+											<img src="img/sub_menu1.jpg" alt="alt">
+										</div>
+									</div>
+								</div>
+								<div class="row row_catalog">
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Полудрагоценные камни</span>
+											<img src="img/cat1.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Драгоценные камни</span>
+											<img src="img/cat2.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Все серьги</span>
+											<img src="img/cat3.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="catalog-menu__icon"><img src="img/ic_cat6.png" alt="alt"></span>Броши</a>
+							<div class="catalog-menu__content">
+								<div class="row">
+									<div class="col-lg-4">
+										<ul class="catalog-menu__sublist">
+											<li><a href="#">Броши</a></li>
+											<li><a href="#">Броши</a></li>
+											<li><a href="#">Броши</a></li>
+											<li><a href="#">Броши</a></li>
+											<li><a href="#">Броши</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4">
+										<div class="catalog-menu__subimage">
+											<img src="img/sub_menu1.jpg" alt="alt">
+										</div>
+									</div>
+								</div>
+								<div class="row row_catalog">
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Полудрагоценные камни</span>
+											<img src="img/cat1.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Драгоценные камни</span>
+											<img src="img/cat2.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Все серьги</span>
+											<img src="img/cat3.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="catalog-menu__icon"><img src="img/ic_cat7.png" alt="alt"></span>Цепи</a>
+							<div class="catalog-menu__content">
+								<div class="row">
+									<div class="col-lg-4">
+										<ul class="catalog-menu__sublist">
+											<li><a href="#">Цепи</a></li>
+											<li><a href="#">Цепи</a></li>
+											<li><a href="#">Цепи</a></li>
+											<li><a href="#">Цепи</a></li>
+											<li><a href="#">Цепи</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4">
+										<div class="catalog-menu__subimage">
+											<img src="img/sub_menu1.jpg" alt="alt">
+										</div>
+									</div>
+								</div>
+								<div class="row row_catalog">
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Полудрагоценные камни</span>
+											<img src="img/cat1.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Драгоценные камни</span>
+											<img src="img/cat2.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Все серьги</span>
+											<img src="img/cat3.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="catalog-menu__icon"><img src="img/ic_cat8.png" alt="alt"></span>Другое</a>
+							<div class="catalog-menu__content">
+								<div class="row">
+									<div class="col-lg-4">
+										<ul class="catalog-menu__sublist">
+											<li><a href="#">Другое</a></li>
+											<li><a href="#">Другое</a></li>
+											<li><a href="#">Другое</a></li>
+											<li><a href="#">Другое</a></li>
+											<li><a href="#">Другое</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4">
+										<div class="catalog-menu__subimage">
+											<img src="img/sub_menu1.jpg" alt="alt">
+										</div>
+									</div>
+								</div>
+								<div class="row row_catalog">
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Полудрагоценные камни</span>
+											<img src="img/cat1.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Драгоценные камни</span>
+											<img src="img/cat2.jpg" alt="alt">
+										</a>
+									</div>
+									<div class="col-lg-4">
+										<a href="#" class="item-catalog">
+											<span class="item-catalog__title">Все серьги</span>
+											<img src="img/cat3.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="title-logo">
+						<div class="title-logo__line"></div>
+						<img src="img/logo_title.png" alt="alt">
+						<div class="title-logo__line"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="authorization">
+			<div class="container">
+				<ul class="breadcumbs">
+					<li><a href="#">Главная</a><span>></span></li>
+					<li>Вход на сайт</li>
+				</ul>
+				<div class="title-middle">Вход на сайт</div>
+				<div class="wrap-form">
+					<form>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="item-form">
+									<div class="descr-input">Имя</div>
+									<input type="text">
+								</div>
+								<div class="item-form">
+									<div class="descr-input">Фамилия</div>
+									<input type="text">
+								</div>
+								<div class="item-form">
+									<div class="descr-input">*Логин</div>
+									<input type="text" required="required">
+								</div>
+								<div class="item-form">
+									<div class="descr-input">*Пароль</div>
+									<input type="password" required="required">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="item-form">
+									<div class="descr-input">*Подтверждение пароля</div>
+									<input type="password" required="required">
+								</div>
+								<div class="item-form">
+									<div class="descr-input">: E-mail</div>
+									<input type="email">
+								</div>
+								<div class="item-form">
+									<div class="descr-input">*Номер телефона</div>
+									<input type="text" required="required" class="input-phone">
+								</div>
+								<div class="item-form">
+									<div class="descr-input">*Введите слово на картинке</div>
+									<div class="capach-wrap">
+										<div class="capcha">
+											<img src="img/capcha.jpg" alt="alt">
+										</div>
+										<input type="text" required="required">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bottom-form">
+							<button class="btn-main">Регистрация</button>
+							<div class="checkbox-wrap">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" required="required" checked="checked" />
+										<span>Согласие на обработку персональных данных</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row row_footer">
+					<div class="col-lg-3 col-md-3">
+						<div class="footer__title">СЛУЖБА ПОДДЕРЖКИ <i class="fal fa-plus"></i></div>
+						<div class="footer__content">
+							<p><a href="tel:+88002222421">8 800 222 24 21</a></p>
+						</div>
+					</div>
+					<div class="col-lg-3 col_pl col-md-3">
+						<div class="footer__title">КАТАЛОГ ТОВАРОВ <i class="fal fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="footer__nav">
+								<li><a href="#">Ювелирные украшения</a></li>
+								<li><a href="#">Часы</a></li>
+								<li><a href="#">Посуда и сувениры</a></li>
+								<li><a href="#">Коллекции</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3">
+						<div class="footer__title">о магазин <i class="fal fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="footer__nav">
+								<li><a href="#">Как купить</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Гарантия</a></li>
+								<li><a href="#">О магазине</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3">
+						<div class="footer__title">Способ оплаты <i class="fal fa-plus"></i></div>
+						<div class="footer__content">
+							<p>Оплата банковскими картами осуществляется через АО «АЛЬФА-БАНК».</p>
+							<ul class="list-payments">
+								<li><img src="img/payment1.png" alt="alt"></li>
+								<li><img src="img/payment2.png" alt="alt"></li>
+								<li><img src="img/payment3.png" alt="alt"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 col-md-3">
+							<a href="#">Политика конфиденциальности</a>
+						</div>
+						<div class="col-lg-3 col_pl col-md-3">
+							<p>г. Симферополь © Copyright 2021 г.</p>
+						</div>
+						<div class="col-lg-3 col-md-3">
+							<div class="create">Сделано в <img src="img/copy.svg" alt="alt"></div>
+						</div>
+						<div class="col-lg-3 col-md-3">
+							<a href="#" class="btn_top default"><i class="fa fa-arrow-up"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.5"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
