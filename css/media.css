@@ -736,14 +736,14 @@
  object-position: left;
 }
 .item-category_1 {
- height: 370px;
+ height: 370px; 
 }
 .item-category__content {
     top: 114px;
     left: 14px;
 }
 .item-card__image {
-    height: 298px;
+    height: 310px;
 }
 .page-numbers.next {
 	margin-left: 15px;
