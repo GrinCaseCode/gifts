@@ -927,6 +927,9 @@
 .add-modal {
   padding: 22px 15px;
 }
+.modal-content .wrap-item {
+  max-width: 100%;
+}
 }
 
 /* Custom, iPhone Retina */
