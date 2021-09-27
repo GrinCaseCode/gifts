@@ -15,11 +15,12 @@
 	<link rel="stylesheet" href="libs/bootstrap-5.0.2/bootstrap-grid.min.css" />
 	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
-	<link rel="stylesheet" href="css/fonts.css?ver=1.5" />
-	<link rel="stylesheet" href="css/main.css?ver=1.5" />
-	<link rel="stylesheet" href="css/media.css?ver=1.5" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.7" />
+	<link rel="stylesheet" href="css/main.css?ver=1.7" />
+	<link rel="stylesheet" href="css/media.css?ver=1.7" />
 </head>
 <body> 
 
@@ -37,7 +38,7 @@
 					<div class="col-lg-4">
 						<div class="header__left">
 							<div class="dropdown-city">
-								<div class="dropdown-city__value">Симферополь <i class="fas fa-chevron-down"></i></div>
+								<a href="#modal-city" class="dropdown-city__value fancybox">Симферополь <i class="fas fa-chevron-down"></i></a>
 							</div>
 							<a href="tel:+79781234567" class="phone-main">+7 (978) 123-45-67</a>
 						</div>
@@ -100,7 +101,7 @@
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<div class="dropdown-city">
-					<div class="dropdown-city__value">Симферополь <i class="fas fa-chevron-down"></i></div>
+					<a href="#modal-city" class="dropdown-city__value fancybox">Симферополь <i class="fas fa-chevron-down"></i></a>
 				</div>
 				<a href="tel:+79781234567" class="phone-main">+7 (978) 123-45-67</a>
 			</div>
@@ -603,6 +604,214 @@
 
 	</div>
 
+	<div id="modal-city" class="modal-block">
+		<div class="modal-content">
+			<div class="title-min">Выберите город</div>
+			<ul class="list-cities">
+				<li class="active"><a href="#">Волгоград</a></li>
+				<li><a href="#">Мытищи</a></li>
+				<li><a href="#">Ростов-на-Дону</a></li>
+				<li><a href="#">Краснодар</a></li>
+			</ul>
+			<form>
+				<div class="search-sity">
+					<div class="icon-search"><i class="fal fa-search"></i></div>
+					<input type="text" placeholder="Выберите ваш город">
+					<div class="clear-search"><i class="far fa-times-circle"></i></div>
+				</div>
+			</form>
+			<div class="title-section">Наши новинки</div>
+				<div class="title-logo">
+					<div class="title-logo__line"></div>
+					<img src="img/logo_title.png" alt="alt">
+					<div class="title-logo__line"></div>
+				</div>
+			<div class="row row_catalog">
+				<div class="col-lg-3 col-sm-6">
+					<div class="wrap-item">
+						<div class="item-porduct">
+							<a href="#" class="item-porduct__image">
+								<img src="img/product2.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-porduct__title">Серьги из золота с топазом и фианитами</a>
+							<div class="item-porduct__price">12 590 ₽</div>
+							<div class="item-porduct__content">
+								<div class="line-feature">
+									<span>Красное золото</span>
+									<span>585</span>
+								</div>
+								<div class="line-feature">
+									<span>Примерный вес</span>
+									<span>1.34 г</span>
+								</div>
+								<div class="line-feature">
+									<span>Топаз</span>
+									<span>1 шт</span>
+								</div>
+								<div class="line-feature">
+									<span>Фианит</span>
+									<span>6 шт</span>
+								</div>
+								<div class="line-feature">
+									<span>Размер</span>
+									<div class="list-sizes">
+										<div class="item-size active">17</div>
+										<div class="item-size">18</div>
+										<div class="item-size">19</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-porduct__bottom">
+								<a href="#modal-add" class="btn-main fancybox">В корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="wrap-item">
+						<div class="item-porduct">
+							<a href="#" class="item-porduct__image">
+								<img src="img/product3.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-porduct__title">Кольцо из золота с фианитами</a>
+							<div class="item-porduct__price">6 110 ₽</div>
+							<div class="item-porduct__content">
+								<div class="line-feature">
+									<span>Красное золото</span>
+									<span>585</span>
+								</div>
+								<div class="line-feature">
+									<span>Примерный вес</span>
+									<span>1.34 г</span>
+								</div>
+								<div class="line-feature">
+									<span>Топаз</span>
+									<span>1 шт</span>
+								</div>
+								<div class="line-feature">
+									<span>Фианит</span>
+									<span>6 шт</span>
+								</div>
+								<div class="line-feature">
+									<span>Размер</span>
+									<div class="list-sizes">
+										<div class="item-size active">17</div>
+										<div class="item-size">18</div>
+										<div class="item-size">19</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-porduct__bottom">
+								<a href="#modal-add" class="btn-main fancybox">В корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="wrap-item">
+						<div class="item-porduct">
+							<a href="#" class="item-porduct__image">
+								<img src="img/product4.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-porduct__title">Подвеска из золота с лунным камнем</a>
+							<div class="item-porduct__price">12 590 ₽</div>
+							<div class="item-porduct__content">
+								<div class="line-feature">
+									<span>Красное золото</span>
+									<span>585</span>
+								</div>
+								<div class="line-feature">
+									<span>Примерный вес</span>
+									<span>1.34 г</span>
+								</div>
+								<div class="line-feature">
+									<span>Топаз</span>
+									<span>1 шт</span>
+								</div>
+								<div class="line-feature">
+									<span>Фианит</span>
+									<span>6 шт</span>
+								</div>
+								<div class="line-feature">
+									<span>Размер</span>
+									<div class="list-sizes">
+										<div class="item-size active">17</div>
+										<div class="item-size">18</div>
+										<div class="item-size">19</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-porduct__bottom">
+								<a href="#modal-add" class="btn-main fancybox">В корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="wrap-item">
+						<div class="item-porduct">
+							<a href="#" class="item-porduct__image">
+								<img src="img/product5.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-porduct__title">Серьги из золота с топазом и фианитами</a>
+							<div class="item-porduct__price">12 590 ₽</div>
+							<div class="item-porduct__content">
+								<div class="line-feature">
+									<span>Красное золото</span>
+									<span>585</span>
+								</div>
+								<div class="line-feature">
+									<span>Примерный вес</span>
+									<span>1.34 г</span>
+								</div>
+								<div class="line-feature">
+									<span>Топаз</span>
+									<span>1 шт</span>
+								</div>
+								<div class="line-feature">
+									<span>Фианит</span>
+									<span>6 шт</span>
+								</div>
+								<div class="line-feature">
+									<span>Размер</span>
+									<div class="list-sizes">
+										<div class="item-size active">17</div>
+										<div class="item-size">18</div>
+										<div class="item-size">19</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-porduct__bottom">
+								<a href="#modal-add" class="btn-main fancybox">В корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-add" class="modal-block">
+		<div class="add-modal">
+			<div class="title-modal">Товар добавлен в корзину</div>
+			<div class="content-add">
+				<div class="item-add">
+					<div class="image-product">
+						<img src="img/prod2.jpg" alt="alt">
+					</div>
+					<div class="item-add__content">
+						<a href="#" class="title-product">Кольцо из розового золота с бриллиантом</a>
+						<div class="price-product">42 990 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="buttons-add">
+				<a href="#" class="btn-main">Перейти в корзину</a>
+				<a href="#" class="btn-main btn-main_block">Продолжить покупки</a>
+			</div>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -615,8 +824,9 @@
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.5"></script>
+<script src="js/common.js?ver=1.7"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
