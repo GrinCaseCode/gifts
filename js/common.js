@@ -18,6 +18,13 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("fixed").addClass("default");
 }
 
+$(".item-question__head").click(function() {
+	$(this).parent().toggleClass("active");
+	$(this).siblings().slideToggle(200);
+	$(this).parent().siblings(".item-question").removeClass("active");
+	$(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
+});
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
@@ -186,6 +193,51 @@ $(".btn-page_filter").click(function(e) {
 		]
 	});
 
+	$('.slider-for').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+	});
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		verticalSwiping: true,
+		vertical: true,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 5,
+				verticalSwiping: false,
+				vertical: false,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 3,
+				verticalSwiping: false,
+				vertical: false,
+			}
+		}
+		]
+	});
+
 	{
 		if ($(window).width() < 768) { 
 			$(".footer__title").click(function() {
@@ -244,6 +296,57 @@ $(".btn-page_filter").click(function(e) {
 		}).on("blur", updateValues)
 	});
 
+
+$('.tabs-card li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-card").hide();
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(100);
+	});
+
+$('.tabs-page li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-page").hide();
+		var selectTab2 = $(this).attr("href");
+		$(selectTab2).fadeIn(100);
+	});
+
+
+jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
+
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+	});
 
 	 // стайлер для select
 	 $('select').styler();
