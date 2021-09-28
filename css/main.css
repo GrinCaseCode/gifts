@@ -3003,7 +3003,7 @@ input[type=number]
 }
 .tab-pane-page {
 	display: none;
-}
+} 
 .tab-pane-page:first-child {
 	display: block;
 }
