@@ -30,8 +30,8 @@ $(".item-question__head").click(function() {
 
 
 		//кнопка sandwich
-	$(".btn_nav-nav").click(function() {
-		$(".sandwich").toggleClass("active"); 
+	$(".btn_nav-menu").click(function() {
+		$(".sandwich").removeClass("active");
 		$(".catalog-menu").slideUp(200);
 		if ($(".menu-mobile").is(":hidden")) {
 			$(".menu-mobile").slideDown(200);
@@ -46,10 +46,10 @@ $(".item-question__head").click(function() {
 			$(".sandwich").removeClass("active");
 		});
 
-	$(".btn-catalog, .btn_nav-menu").click(function(e) {
+	$(".btn-catalog, .btn_nav-nav").click(function(e) {
 		e.preventDefault();
+		$(".sandwich").toggleClass("active"); 
 			$(".menu-mobile").slideUp(200);
-			$(".sandwich").removeClass("active");
 			$(".catalog-menu").slideToggle(200); 
 			$(this).toggleClass("active");
 		});
